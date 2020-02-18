@@ -13,3 +13,10 @@ rules:
   verbs:
   - get
   - list
+- apiGroups:
+  - "rqcluster.example.com"
+  resources:
+  - rqclusters
+  verbs:
+  - get
+  - list

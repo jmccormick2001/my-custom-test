@@ -1,9 +1,10 @@
-module github.com/jmccormick2001/rqlite-operator
+module github.com/jmccormick2001/my-custom-test
 
 go 1.13
 
 require (
 	github.com/go-logr/logr v0.1.0
+	github.com/jmccormick2001/rqlite-operator v0.0.3
 	github.com/operator-framework/operator-sdk v0.14.1-0.20200114205503-152e5d5bc3a1
 	github.com/sirupsen/logrus v1.4.2
 	github.com/spf13/cobra v0.0.5
@@ -14,6 +15,7 @@ require (
 	k8s.io/apimachinery v0.0.0
 	k8s.io/client-go v12.0.0+incompatible
 	k8s.io/kube-openapi v0.0.0-20190918143330-0270cf2f1c1d
+	k8s.io/kubectl v0.0.0
 	sigs.k8s.io/controller-runtime v0.4.0
 )
 
