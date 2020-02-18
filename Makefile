@@ -2,8 +2,9 @@ NS = rq
 IMAGEUSER = jemccorm
 IMAGE = my-custom-test
 IMAGE_VERSION = v0.0.1
-build-custom-test:
+compile:
 	go build -o bin/$(IMAGE) ./pkg/custom
+build-image: compile
 	sudo podman build --tag quay.io/$(IMAGEUSER)/$(IMAGE):$(IMAGE_VERSION) -f ./Dockerfile
 	sudo podman push --authfile /home/jeffmc/.docker/config.json $(IMAGEUSER)/$(IMAGE):$(IMAGE_VERSION) docker://quay.io/$(IMAGEUSER)/$(IMAGE):$(IMAGE_VERSION)
 clean:   
