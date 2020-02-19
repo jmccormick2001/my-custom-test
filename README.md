@@ -1,8 +1,8 @@
 ---
-description: A scorecard custom test, only an example
+description: A scorecard static test, only an example
 ---
 
-# my-custom-test
+# my-static-test
 
 ## Getting Started
 

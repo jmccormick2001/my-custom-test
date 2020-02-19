@@ -1,22 +1,13 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  name: my-custom-test
+  name: my-static-test
 rules:
 - apiGroups:
   - ""
   resources:
   - pods
-  - services
   - configmaps
-  - secrets
-  verbs:
-  - get
-  - list
-- apiGroups:
-  - "rqcluster.example.com"
-  resources:
-  - rqclusters
   verbs:
   - get
   - list

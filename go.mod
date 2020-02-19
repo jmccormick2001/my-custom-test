@@ -5,6 +5,7 @@ go 1.13
 require (
 	github.com/go-logr/logr v0.1.0
 	github.com/jmccormick2001/rqlite-operator v0.0.3
+	github.com/operator-framework/api v0.0.0-20191127212340-9066a6e95573
 	github.com/operator-framework/operator-sdk v0.14.1-0.20200114205503-152e5d5bc3a1
 	github.com/sirupsen/logrus v1.4.2
 	github.com/spf13/cobra v0.0.5
